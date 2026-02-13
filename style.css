@@ -1,0 +1,136 @@
+/* Copy semua style dari file HTML sebelumnya ke sini */
+/* Biar lebih rapi, pisahin CSS ke file sendiri */
+
+.file-list {
+    margin: 20px 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.file-card {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+
+.file-card:hover {
+    border-color: #667eea;
+    transform: translateX(5px);
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.file-icon {
+    font-size: 2em;
+    width: 40px;
+    text-align: center;
+}
+
+.file-details {
+    flex: 1;
+}
+
+.file-name {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 4px;
+}
+
+.file-meta {
+    font-size: 0.85em;
+    color: #718096;
+}
+
+.remove-file {
+    background: #feb2b2;
+    color: #c53030;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.remove-file:hover {
+    background: #fc8181;
+    color: #9b2c2c;
+    transform: scale(1.1);
+}
+
+.result-card {
+    background: linear-gradient(145deg, #f0fff4, #e6fffa);
+    border: 3px solid #48bb78;
+    border-radius: 18px;
+    padding: 25px;
+    margin-top: 20px;
+    animation: slideUp 0.5s ease;
+}
+
+.url-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    word-break: break-all;
+}
+
+.url-box a {
+    color: #22543d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.url-box a:hover {
+    text-decoration: underline;
+}
+
+.copy-btn {
+    background: #48bb78;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.copy-btn:hover {
+    background: #38a169;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(72,187,120,0.3);
+}
+
+.note {
+    color: #718096;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

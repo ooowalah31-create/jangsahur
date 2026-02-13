@@ -1,0 +1,19 @@
+{
+    "github": {
+        "token": "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",
+        "username": "zamxs-oblivion"
+    },
+    "vercel": {
+        "token": "vcp_1qApXhS4tujXkZBWnm0uxSTBtyor5zT3LNxMka14aZHRldXBw12ybMCt"
+    },
+    "settings": {
+        "defaultPlatform": "vercel",
+        "maxFileSize": 100,
+        "allowedExtensions": ["html", "js", "json", "css", "zip"]
+    },
+    "messages": {
+        "welcome": "ZAMXS DEPLOYER PRO - READY TO DEPLOY!",
+        "success": "Deployment successful! 🎉",
+        "error": "Deployment failed! 😢"
+    }
+}

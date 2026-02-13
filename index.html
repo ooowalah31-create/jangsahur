@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAMXS DEPLOYER PRO 🔥</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Load config first -->
+    <script src="config.json" type="application/json" id="configData"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ ZAMXS DEPLOYER PRO</h1>
+            <p>Real Deploy • Multi-file Support • NO BUG!</p>
+        </div>
+        
+        <div class="content">
+            <!-- Nama Website -->
+            <div class="input-group">
+                <label>📝 Nama Website</label>
+                <input type="text" id="siteName" placeholder="my-awesome-site" value="zamxs-deploy">
+                <div class="url-preview" id="urlPreview">
+                    https://<span id="previewName">zamxs-deploy</span>.<span id="previewDomain">vercel.app</span>
+                </div>
+            </div>
+            
+            <!-- File Upload Area -->
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📁</div>
+                <h3>Klik atau drop file di sini</h3>
+                <p>Support: .html .js .json .css .zip</p>
+                <input type="file" id="fileInput" multiple accept=".html,.htm,.js,.json,.css,.zip" hidden>
+            </div>
+            
+            <!-- Selected Files List -->
+            <div id="fileList" class="file-list"></div>
+            
+            <!-- Platform Selector -->
+            <div class="platform-selector">
+                <div class="platform-btn active" data-platform="vercel">▲ Vercel</div>
+                <div class="platform-btn" data-platform="github">🐙 GitHub Pages</div>
+                <div class="platform-btn" data-platform="netlify">🚀 Netlify</div>
+            </div>
+            
+            <!-- Deploy Button -->
+            <button class="deploy-btn" id="deployBtn" disabled>🚀 DEPLOY SEKARANG</button>
+            
+            <!-- Live Log -->
+            <div class="log-box" id="logContainer">
+                <div class="log-entry">⟫ System initialized...</div>
+                <div class="log-entry">⟫ Loading configuration...</div>
+            </div>
+            
+            <!-- Result Container -->
+            <div id="resultContainer"></div>
+        </div>
+    </div>
+    
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- JSZip for ZIP extraction -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</body>
+</html>
